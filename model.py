@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 
-class Net(nn.Module):
+class Net(nn.Module): ## Model with given parameters in the readme file
     #This defines the structure of the NN.
     def __init__(self):
         super(Net, self).__init__()
@@ -34,7 +34,6 @@ def GetCorrectPredCount(pPrediction, pLabels):
 
 
 
-# test_incorrect_pred = {'images': [], 'ground_truths': [], 'predicted_vals': []}
 def train(model, device, train_loader, optimizer, criterion):
     model.train()
     train_losses = []
